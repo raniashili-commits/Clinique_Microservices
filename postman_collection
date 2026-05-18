@@ -1,0 +1,405 @@
+{
+  "info": {
+    "_postman_id": "e4d5c8e7-49dc-4650-8515-8a0c0fb0eed1",
+    "name": "Clinique Microservices - Rania Shili",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52231195",
+    "_collection_link": "https://go.postman.co/collection/52231195-e4d5c8e7-49dc-4650-8515-8a0c0fb0eed1?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Patients",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nom\": \"Shili\",\r\n  \"prenom\": \"Mohamed\",\r\n  \"email\": \"mohamed@email.com\",\r\n  \"telephone\": \"22334455\",\r\n  \"dateNaissance\": \"1974-01-30\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nom\": \"Shili\",\r\n  \"prenom\": \"Asma\",\r\n  \"email\": \"asma@email.com\",\r\n  \"telephone\": \"55667788\",\r\n  \"dateNaissance\": \"2007-03-15\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nom\": \"Hasni\",\r\n  \"prenom\": \"Fatma\",\r\n  \"email\": \"fatma@email.com\",\r\n  \"telephone\": \"26667788\",\r\n  \"dateNaissance\": \"1984-03-30\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nom\": \"Loghmari\",\r\n  \"prenom\": \"Eya\",\r\n  \"email\": \"eya@email.com\",\r\n  \"telephone\": \"26667788\",\r\n  \"dateNaissance\": \"2002-01-18\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/patients/b1b2ae5e-b8e4-421f-b8d4-3b41229334a5",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "patients",
+                "b1b2ae5e-b8e4-421f-b8d4-3b41229334a5"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nom\": \"Loghmari\",\r\n  \"prenom\": \"Eya\",\r\n  \"email\": \"eya@email.com\",\r\n  \"telephone\": \"26667788\",\r\n  \"dateNaissance\": \"2002-01-18\"\r\n}"
+            },
+            "url": {
+              "raw": "http://localhost:3000/patients",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "patients"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"nom\": \"Shili\",\r\n  \"prenom\": \"Mohamed Modifie\",\r\n  \"email\": \"nouveau@email.com\",\r\n  \"telephone\": \"11223344\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/patients/5c9e9f16-401a-4cc1-aeeb-ad89e7c3be51",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "patients",
+                "5c9e9f16-401a-4cc1-aeeb-ad89e7c3be51"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Rendez-vous",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patientId\": \"eedccbbc-5c3b-4d62-98be-62125c2fca97\",\r\n  \"date\": \"2026-06-01\",\r\n  \"heure\": \"09:00\",\r\n  \"medecin\": \"Dr. LEJRI\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/rendezvous",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "rendezvous"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"patientId\": \"eedccbbc-5c3b-4d62-98be-62125c2fbaf31\",\r\n  \"date\": \"2026-06-28\",\r\n  \"heure\": \"11:00\",\r\n  \"medecin\": \"Dr. BENNOUR\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/rendezvous",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "rendezvous"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/rendezvous",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "rendezvous"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "GraphQL",
+      "item": [
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "query {\r\n  patients {\r\n    id\r\n    nom\r\n    prenom\r\n    email\r\n    telephone\r\n  }\r\n}",
+                "variables": ""
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/graphql",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "graphql"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "query {\r\n  patient(id: \"eedccbbc-5c3b-4d62-98be-62125c2fca97\") {\r\n    id\r\n    nom\r\n    prenom\r\n    email\r\n  }\r\n}",
+                "variables": ""
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/graphql",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "graphql"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "query {\r\n  allRendezvous {\r\n    id\r\n    patientId\r\n    date\r\n    heure\r\n    medecin\r\n    statut\r\n  }\r\n}",
+                "variables": ""
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/graphql",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "graphql"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "graphql",
+              "graphql": {
+                "query": "mutation {\r\n  createPatient(\r\n    nom: \"Kafkauser\"\r\n    prenom: \"Test\"\r\n    email: \"kafka@test.com\"\r\n    telephone: \"11111111\"\r\n    dateNaissance: \"1990-01-01\"\r\n  ) {\r\n    id\r\n    nom\r\n    prenom\r\n  }\r\n}",
+                "variables": ""
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/graphql",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "graphql"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    }
+  ]
+}

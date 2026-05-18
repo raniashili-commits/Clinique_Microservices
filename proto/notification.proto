@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package notification;
+
+message Notification {
+  string id = 1;
+  string patientId = 2;
+  string message = 3;
+  string type = 4;
+  string dateEnvoi = 5;
+  bool lu = 6;
+}
+
+message CreateNotificationRequest {
+  string patientId = 1;
+  string message = 2;
+  string type = 3;
+}
+
+message GetNotificationsRequest {
+  string patientId = 1;
+}
+
+message NotificationResponse {
+  Notification notification = 1;
+}
+
+message NotificationsListResponse {
+  repeated Notification notifications = 1;
+}
+
+service NotificationService {
+  rpc CreateNotification (CreateNotificationRequest) returns (NotificationResponse);
+  rpc GetNotifications (GetNotificationsRequest) returns (NotificationsListResponse);
+}

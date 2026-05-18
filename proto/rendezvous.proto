@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package rendezvous;
+
+message Rendezvous {
+  string id = 1;
+  string patientId = 2;
+  string date = 3;
+  string heure = 4;
+  string medecin = 5;
+  string statut = 6;
+}
+
+message CreateRendezvousRequest {
+  string patientId = 1;
+  string date = 2;
+  string heure = 3;
+  string medecin = 4;
+}
+
+message GetRendezvousRequest {
+  string id = 1;
+}
+
+message GetAllRendezvousRequest {}
+
+message RendezvousResponse {
+  Rendezvous rendezvous = 1;
+}
+
+message RendezvousListResponse {
+  repeated Rendezvous rendezvousList = 1;
+}
+
+message UpdateRendezvousRequest {
+  string id = 1;
+  string date = 2;
+  string heure = 3;
+  string medecin = 4;
+  string statut = 5;
+}
+
+message DeleteRendezvousRequest {
+  string id = 1;
+}
+
+message DeleteRendezvousResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+service RendezvousService {
+  rpc CreateRendezvous (CreateRendezvousRequest) returns (RendezvousResponse);
+  rpc GetRendezvous (GetRendezvousRequest) returns (RendezvousResponse);
+  rpc GetAllRendezvous (GetAllRendezvousRequest) returns (RendezvousListResponse);
+  rpc UpdateRendezvous (UpdateRendezvousRequest) returns (RendezvousResponse);
+  rpc DeleteRendezvous (DeleteRendezvousRequest) returns (DeleteRendezvousResponse);
+}
